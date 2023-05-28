@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #0b1c51; 
+}
+
+header h1 {
+    color: aliceblue;
+    /* to align the the title to the middle */
+    text-align: center;
+    /* To give the size that were given to me */
+    font-size: 52px;
+    /* pushes the text down 20 pixels from the top pf the page */
+    padding-top: 20px;
+}
+
+header nav {
+    display: flex;
+
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+
+    padding-left: 0;
+
+    list-style: none;
+
+}
+
+header nav ul li a {
+    color: #fff;
+
+    text-decoration: none;
+
+    font-family: Montserrat;
+
+    margin: 0 20px 0 0;
+}
+
+header nav ul li:last-child a {
+    margin-right: 0;
+}
+
+@media all and (min-width: 600px) {
+    header {
+        display: flex;
+
+        justify-content: space-between;
+
+        padding: 0 30px;
+    }
+
+    header h1 {
+        margin: 14px 0;
+
+        padding-top: 0;
+
+        font-size: 48px;
+    }
+
+    header nav {
+        margin-top: 8px;
+    }
+
+    header nav ul li a:hover {
+        color: #bdbdbd
+    }
+}
